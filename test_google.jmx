@@ -56,7 +56,7 @@
           </ConstantTimer>
           <hashTree/>
         </hashTree>
-        <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="Backend Listener" enabled="false">
+        <BackendListener guiclass="BackendListenerGui" testclass="BackendListener" testname="Backend Listener" enabled="true">
           <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="graphiteMetricsSender" elementType="Argument">
@@ -66,12 +66,12 @@
               </elementProp>
               <elementProp name="graphiteHost" elementType="Argument">
                 <stringProp name="Argument.name">graphiteHost</stringProp>
-                <stringProp name="Argument.value">178.62.9.79</stringProp>
+                <stringProp name="Argument.value">127.0.0.1</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="graphitePort" elementType="Argument">
                 <stringProp name="Argument.name">graphitePort</stringProp>
-                <stringProp name="Argument.value">49154</stringProp>
+                <stringProp name="Argument.value">32768</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="rootMetricsPrefix" elementType="Argument">
@@ -126,7 +126,10 @@
               <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
               <assertionsResultsToSave>0</assertionsResultsToSave>
               <bytes>true</bytes>
+              <url>true</url>
+              <hostname>true</hostname>
               <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
             </value>
           </objProp>
           <stringProp name="filename"></stringProp>
